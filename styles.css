@@ -56,7 +56,7 @@ nav {
     .socialsContainer {
         display: none;
     }
-    
+
 .IndexContainer {
     display: flex;
     align-items: center;
@@ -317,6 +317,7 @@ button:hover {
     font-size: 20px;
     font-weight: bold;
     margin: 10px;
+    list-style: none;
   }
 
   .projectsInfo li:hover {
