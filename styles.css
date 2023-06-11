@@ -232,6 +232,11 @@
     font-weight: 100;
   }
   
+  html {
+    scroll-behavior: smooth;
+  }
+  
+
   .repository h2 {
     font-size: 22px;
     margin-bottom: 10px;
