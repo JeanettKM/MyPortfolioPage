@@ -1,165 +1,165 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-
-body {
+  }
+  
+  
+  body {
     font-family: Arial, sans-serif;
     line-height: 1.5;
     background-color: rgb(143, 91, 103);
-}
-
-/* Navbar styling */
-header {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Quicksand', sans-serif, Arial, Helvetica, sans-serif
+  }
+  
+  /* Navbar styling */
+  header {
     background-color: rgb(143, 91, 103);
     padding: 10px;
-}
-
-nav {
+    font-weight: 100;
+  }
+  
+  nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-}
-
-.logo {
-    font-weight: bold;
+    font-weight: 100;
+  }
+  
+  .logo {
+    font-weight: 100;
     font-size: 24px;
     text-decoration: none;
     color: white;
     margin-left: 20px;
-}
-
-.navTabs {
+    font-weight: 100;
+  }
+  
+  .navTabs {
     list-style: none;
     display: flex;
     gap: 45px;
     margin-right: 50px;
-}
-
-.navTabs li {
+  }
+  
+  .navTabs li {
     margin-left: 10px;
-}
-
-.navTabs li a {
+  }
+  
+  .navTabs li a {
     text-decoration: none;
     font-size: 17px;
     color: white;
-}
-
-
-/* Index-information */
-
-@media (max-width: 1700px) {
-
+  }
+  
+  /* Index-information */
+  @media (max-width: 1700px) {
     .socialsContainer {
-        display: none;
+      display: none;
     }
-
-.IndexContainer {
+  }
+  
+  .IndexContainer {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     margin: auto;
     max-width: 600px;
     padding: 50px;
-
-}
-.IndexIMG {
+    flex-grow: 1;
+  }
+  
+  .IndexIMG {
     clip-path: circle();
-}
-
-.IndexInfo H1 {
+  }
+  
+  .IndexInfo H1 {
     flex-basis: 100%;
     margin-bottom: 10px;
     position: relative;
     font-size: 25px;
     line-height: 1.3;
     color: white;
-}
-
-.IndexInfo H2 {
+    font-weight: 100;
+  }
+  
+  .IndexInfo H2 {
     position: relative;
     font-size: 16.5px;
     line-height: 1.3;
     color: white;
-}
-}
-
-.IndexInfo {
+    font-weight: 100;
+  }
+  
+  .IndexInfo {
     max-width: 700px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     margin-top: 200px;
     flex-basis: 100%;
-}
-
-.IndexContainer {
+  }
+  
+  .IndexContainer {
     height: 100vh;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-
-}
-
-.IndexInfo H1 {
+  }
+  
+  .IndexInfo H1 {
     flex-basis: 100%;
     margin-bottom: 10px;
     position: relative;
     font-size: 45px;
     line-height: 1.3;
     color: white;
-}
-
-.IndexInfo H2 {
+    font-weight: 100;
+  }
+  
+  .IndexInfo H2 {
     position: relative;
     font-size: 21.5px;
     line-height: 1.3;
     color: white;
-}
-
-.IndexIMG {
-   clip-path: circle();
-   margin-right: 20px;
-   max-width: 950px;
-   order: -1;
-}
-
-img {
-    width: 100%;
-}
+    font-weight: 100;
+  }
   
-
-
-
-/* Buttons */
-
-.buttonContainer {
+  .IndexIMG {
+    clip-path: circle();
+    margin-right: 20px;
+    max-width: 950px;
+    order: -1;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  /* Buttons */
+  .buttonContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-}
-
-
-.buttonContainer button {
+  }
+  
+  .buttonContainer button {
     padding: 22px 70px;
     border: none;
     margin-right: 40px;
     border-radius: 3px;
-
-}
-
-.buttonContainer button a {
+  }
+  
+  .buttonContainer button a {
     text-decoration: none;
     font-size: 16px;
     color: white;
-    
-}
-
-button {
+  }
+  
+  button {
     padding: 22px 70px;
     border: none;
     border-radius: 3px;
@@ -167,39 +167,36 @@ button {
     margin-bottom: 15px;
     background-color: rgb(105, 65, 74);
     font-size: 16px;
-}
-
-/* hover */
-
-button:hover {
+  }
+  
+  /* hover */
+  button:hover {
     background-color: rgb(80, 197, 158);
-}
-
-.socials svg:hover{
-    color:rgb(80, 197, 158);
-}
-
-
-.socialsContainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-top: 40px;
-        gap: 40px;
-        width: 100%;
-        margin-top: 120px;
-    }
-    
-
-.socialsContainer a {
+  }
+  
+  .socials svg:hover {
+    color: rgb(80, 197, 158);
+  }
+  
+  .socialsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 40px;
+    width: 100%;
+    margin-top: 120px;
+  }
+  
+  .socialsContainer a {
     display: inline-block;
     margin: 5px;
     color: white;
     font-size: 45px;
-}
-
-.footer {
+  }
+  
+  .footer {
     font-weight: 200;
     font-size: 12px;
     text-align: center;
@@ -208,12 +205,9 @@ button:hover {
     padding: 20px;
     background-color: rgb(105, 65, 74);
     color: white;
-
-  
   }
-
-  /* Portfolio page  */
-
+  
+  /* Portfolio page */
   .repositories {
     display: flex;
     justify-content: center;
@@ -221,7 +215,7 @@ button:hover {
     flex-wrap: wrap;
     gap: 50px;
     color: white;
-    height: 100vh;
+    min-height: 100vh;
   }
   
   .repository {
@@ -235,13 +229,15 @@ button:hover {
     padding: 30px;
     border-radius: 5px;
     min-height: 600px;
+    font-weight: 100;
   }
-
+  
   .repository h2 {
     font-size: 22px;
     margin-bottom: 10px;
+    font-weight: 100;
   }
-
+  
   .repository:hover {
     background-color: rgb(97, 50, 68);
   }
@@ -249,34 +245,34 @@ button:hover {
   .description {
     margin-top: 10px;
   }
-
+  
   .github a:hover {
     text-decoration: underline;
     color: rgb(80, 197, 158);
   }
-
+  
   .github a {
     text-decoration: none;
   }
-
+  
   .portfolioText {
     text-align: center;
     color: white;
     font-size: 30px;
     padding-bottom: 70px;
+    font-weight: 100;
   }
-
+  
   .github {
     padding-top: 30px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 100;
   }
-
+  
   .github a {
     color: white;
   }
-
-
+  
   .portfolioMain {
     display: flex;
     flex-direction: column;
@@ -296,8 +292,9 @@ button:hover {
     border-radius: 3px;
     min-height: 750px;
     margin: auto;
+    font-weight: 100;
   }
-
+  
   .projectsInfo div {
     margin-top: 40px;
   }
@@ -310,23 +307,23 @@ button:hover {
   .portfolioIMG {
     clip-path: circle();
     margin: 30px;
-
   }
-
+  
   .projectsInfo li {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 20px;
     list-style: none;
   }
-
+  
   .projectsInfo li:hover {
     text-decoration: underline;
     font-size: 22px;
-  } 
-
+  }
+  
   .projectsInfo a:hover {
     text-decoration: underline;
-    font-weight: bold;
+    font-weight: 300;
     color: rgb(80, 197, 158);
-    }
+  }
+  
