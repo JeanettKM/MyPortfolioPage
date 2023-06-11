@@ -167,15 +167,11 @@ button {
 /* hover */
 
 button:hover {
-    background-color: white;
-}
-
-button a:hover {
-    color: rgb(88, 53, 62);
+    background-color: rgb(80, 197, 158);
 }
 
 .socials svg:hover{
-    color: rgb(93, 255, 201);
+    color:rgb(80, 197, 158);
 }
 
 
@@ -204,9 +200,10 @@ button a:hover {
     text-align: center;
     font-size: 15px;
     flex-shrink: 0;
-    padding: 10px;
+    padding: 20px;
     background-color: rgb(105, 65, 74);
     color: white;
+
   
   }
 
@@ -250,7 +247,7 @@ button a:hover {
 
   .github a:hover {
     text-decoration: underline;
-    color: rgb(93, 255, 201);
+    color: rgb(80, 197, 158);
   }
 
   .github a {
@@ -325,5 +322,5 @@ button a:hover {
   .projectsInfo a:hover {
     text-decoration: underline;
     font-weight: bold;
-    color: rgb(93, 255, 201);
-  } 
+    color: rgb(80, 197, 158);
+    }
