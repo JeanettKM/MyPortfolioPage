@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: rgb(143, 91, 103);
+}
+
+/* Navbar styling */
+header {
+    background-color: rgb(143, 91, 103);
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+
+.navTabs {
+    list-style: none;
+    display: flex;
+    gap: 45px;
+    margin-right: 50px;
+}
+
+.navTabs li {
+    margin-left: 10px;
+}
+
+.navTabs li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+}
+
+
+/* Index-information */
+
+@media (max-width: 1700px) {
+.IndexContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 600px;
+    padding: 50px;
+
+}
+.IndexIMG {
+    clip-path: circle();
+}
+
+.IndexInfo H1 {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 25px;
+    line-height: 1.3;
+    color: white;
+}
+
+.IndexInfo H2 {
+    position: relative;
+    font-size: 16.5px;
+    line-height: 1.3;
+    color: white;
+}
+}
+
+.IndexInfo {
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 200px;
+    flex-basis: 100%;
+}
+
+.IndexContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.IndexInfo H1 {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 45px;
+    line-height: 1.3;
+    color: white;
+}
+
+.IndexInfo H2 {
+    position: relative;
+    font-size: 21.5px;
+    line-height: 1.3;
+    color: white;
+}
+
+.IndexIMG {
+   clip-path: circle();
+   margin-right: 20px;
+   max-width: 950px;
+   order: -1;
+}
+
+img {
+    width: 100%;
+}
+  
+
+
+
+/* Buttons */
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.buttonContainer button {
+    padding: 22px 70px;
+    border: none;
+    margin-right: 40px;
+    border-radius: 3px;
+
+}
+
+.buttonContainer button a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    
+}
+
+button {
+    padding: 22px 70px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 40px;
+    margin-bottom: 15px;
+    background-color: rgb(105, 65, 74);
+    font-size: 16px;
+}
+
+/* hover */
+
+button:hover {
+    background-color: white;
+}
+
+button a:hover {
+    color: rgb(88, 53, 62);
+}
+
+.socials svg:hover{
+    color: rgb(93, 255, 201);
+}
+
+
+.socialsContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        gap: 40px;
+        width: 100%;
+        margin-top: 120px;
+    }
+    
+
+.socialsContainer a {
+    display: inline-block;
+    margin: 5px;
+    color: white;
+    font-size: 45px;
+}
+
+.footer {
+    font-weight: 200;
+    font-size: 12px;
+    text-align: center;
+    font-size: 15px;
+    flex-shrink: 0;
+    padding: 10px;
+    background-color: rgb(105, 65, 74);
+    color: white;
+  
+  }
+
+  /* Portfolio page  */
+
+  .repositories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    color: white;
+    height: 100vh;
+  }
+  
+  .repository {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    max-width: 400px;
+    text-align: center;
+    background-color: rgb(105, 65, 74);
+    padding: 30px;
+    border-radius: 5px;
+    min-height: 600px;
+  }
+
+  .repository h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .repository:hover {
+    background-color: rgb(97, 50, 68);
+  }
+  
+  .description {
+    margin-top: 10px;
+  }
+
+  .github a:hover {
+    text-decoration: underline;
+    color: rgb(93, 255, 201);
+  }
+
+  .github a {
+    text-decoration: none;
+  }
+
+  .portfolioText {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding-bottom: 70px;
+  }
+
+  .github {
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .github a {
+    color: white;
+  }
+
+
+  .portfolioMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .projectsInfo {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    padding: 70px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(105, 65, 74);
+    border-radius: 3px;
+    min-height: 750px;
+    margin: auto;
+  }
+
+  .projectsInfo div {
+    margin-top: 40px;
+  }
+  
+  .projectsInfo a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .portfolioIMG {
+    clip-path: circle();
+    margin: 30px;
+
+  }
+
+  .projectsInfo li {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+  }
+
+  .projectsInfo li:hover {
+    text-decoration: underline;
+    font-size: 22px;
+  } 
+
+  .projectsInfo a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: rgb(93, 255, 201);
+  } 
