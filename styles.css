@@ -332,3 +332,8 @@
     color: rgb(80, 197, 158);
   }
   
+  .navTabs li:hover {
+    text-decoration: underline;
+    font-weight: 300;
+    color: rgb(80, 197, 158);
+  }
