@@ -52,6 +52,11 @@ nav {
 /* Index-information */
 
 @media (max-width: 1700px) {
+
+    .socialsContainer {
+        display: none;
+    }
+    
 .IndexContainer {
     display: flex;
     align-items: center;
