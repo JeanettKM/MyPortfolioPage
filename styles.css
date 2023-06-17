@@ -489,8 +489,6 @@ ul {
   }
 
   @media screen and (max-width: 280px) {
-    
-    
     .IndexInfo H1 {
       font-size: 17px;
     }
@@ -533,6 +531,5 @@ ul {
     .repositories {
       min-width
       padding: none;
-    }
 
-  }
+    }
