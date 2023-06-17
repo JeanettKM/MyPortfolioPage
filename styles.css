@@ -23,16 +23,19 @@ ul {
     background-color: rgb(143, 91, 103);
     font-family: 'Quicksand', sans-serif, Arial, Helvetica, sans-serif;
     min-width: 200px;
+    background: url("layered-waves-haikei\(60\).svg");
+    background-size: cover;
   }
 
   header {
-    background-color: rgb(143, 91, 103);
+    background-color: #8f5b68;
     padding: 20px;
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 999;
   }
+
   
   .logo {
     font-size: 24px;
@@ -61,7 +64,7 @@ ul {
   .navTabs a {
     text-decoration: none;
     color: white;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 16px;
   }
 
@@ -102,31 +105,9 @@ ul {
   
   .buttonContainer {
     margin-top: 20px;
+    margin-bottom: 100px;
   }
 
-
-
-  .btn {
-    text-align: center;
-    margin: 30px;
-  }
-  
-  .btn a {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: rgb(105, 65, 74);
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.2s ease;
-    font-weight: 100;
-    border-radius: 3px;
-  }
-  
-  .btn a:hover {
-    background-color: rgb(80, 197, 158);
-    text-decoration: underline;
-    transition: background-color 0.2s ease;
-  }
 
   .logo:hover {
     color: rgb(80, 197, 158);
@@ -136,6 +117,7 @@ ul {
   
   .socialsContainer {
     padding: 30px;
+    transform: matrix(0, 1, 1, 0, 0, 0,);
   }
   
   .socials {
@@ -160,7 +142,7 @@ ul {
     max-width: 400px;
     margin: 20px;
     text-align: center;
-    background-color: rgb(105, 65, 74);
+    background-color: #6F3D4A;
     padding: 30px;
     min-height: 600px;
     border-radius: 3px;
@@ -183,7 +165,7 @@ ul {
     text-align: center;
     font-size: 15px;
     padding: 20px;
-    background-color: rgb(105, 65, 74);
+    background-color:#6f3d4a;
     color: white;
     margin-top: 40px;
   
@@ -206,6 +188,9 @@ ul {
       margin-top: 0;
     }
 
+    .repositories {
+      background: #6F3D4A;
+    }
 
   }
   
@@ -213,6 +198,7 @@ ul {
     .projectsInfo p {
       padding-top: 5px;
       padding-bottom: 5px;
+      text-align: center;
     }
 
     .repository {
@@ -225,7 +211,7 @@ ul {
 
     .socials {
       padding: 10px;
-      font-size: 25px;
+      font-size: 30px;
     }
 
     nav {
@@ -256,7 +242,12 @@ ul {
   }
 
   .IndexIMG {
+    clip-path: circle();
     text-align: center;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #99616f, #81525e);
+    box-shadow:  27px 27px 53px #754b55,
+                 -27px -27px 53px #a96b7b;
   }
 
     
@@ -264,7 +255,7 @@ ul {
   .projectsInfo {
     text-align: center;
     margin-bottom: 40px;
-    margin-top: 150px;
+    margin-top: px;
     padding: 70px;
     font-size: 20px;
     color: white;
@@ -277,6 +268,10 @@ ul {
     margin-bottom: 50px;
     font-weight: 100;
     max-width: 700px;
+    border-radius: 4px;
+    background: #7F4C59;
+    box-shadow: inset 15px 15px 44px #744551,
+                inset -15px -15px 44px #8a5361;
   }
 
   .portfolioIMG img {
@@ -324,6 +319,10 @@ ul {
     justify-content: center;
     margin: auto;
     min-width: fit-content;
+    border-radius: 4px;
+    background: #7F4C59;
+    box-shadow: inset 15px 15px 24px #794855,
+                inset -15px -15px 24px #85505d;
   }
 
 
@@ -341,7 +340,7 @@ ul {
   }
   
   .repository:hover {
-    background-color: rgb(97, 50, 68);
+    background-color: #5f2e3b;
   }
   
   .description {
@@ -388,9 +387,8 @@ ul {
   }
 
   #totopBtn {
-    background-color: rgb(105, 65, 74);
+    background-color: #6f3d4a;
     padding: 12px 30px;
-    color: white;
     font-weight: 100;
     font-size: 12px;
   }
@@ -400,13 +398,75 @@ ul {
     text-decoration: none;
   }
 
-  #totopBtn:hover {
-    background-color: rgb(80, 197, 158);
-    text-decoration: underline;
-    transition: background-color 0.2s ease;
-  }
-
   .totopbtnContainer {
     text-align: center;
     margin: 20px;
   }
+
+
+  .button {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 15px;
+    color: white;
+    background-color: #7d4a58;
+    z-index: 1;
+    font-weight: 100;
+   }
+
+   .button a{
+    color: white;
+    font-weight: 100;
+   }
+   
+   .button:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: #8f5b68;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+   }
+   
+   .button:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #39bda7;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+   }
+   
+   .button:hover {
+    color: #ffffff;
+    border: 1px solid #39bda7;
+   }
+   
+   .button:hover:before {
+    top: -35%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+   }
+   
+   .button:hover:after {
+    top: -45%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+   }
+  
