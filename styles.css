@@ -17,6 +17,7 @@ ul {
   body {
     background-color: rgb(143, 91, 103);
     font-family: 'Quicksand', sans-serif, Arial, Helvetica, sans-serif;
+    min-width: 200px;
   }
 
   header {
@@ -134,8 +135,6 @@ ul {
     padding: 15px;
     font-size: 32px;
   }
-  
-  /* Projects section styles */
 
   .toolslist li {
     padding-bottom: 20px;
@@ -170,7 +169,6 @@ ul {
     border-radius: 3px;
   }
   
-  /* Footer styles */
 
   .footer {
     font-weight: 200;
@@ -180,6 +178,10 @@ ul {
     background-color: rgb(105, 65, 74);
     color: white;
     margin-top: 40px;
+  }
+
+  .footer p {
+    text-decoration: none;
   }
   
   /* Media queries */
@@ -202,16 +204,22 @@ ul {
   }
   
   @media screen and (max-width: 480px) {
+    .projectsInfo p {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
     .repository {
       width: 100%;
     }
 
     .socialsContainer {
-      padding: 5px;
+      padding: 10px;
     }
 
     .socials {
       padding: 10px;
+      font-size: 25px;
     }
 
     nav {
@@ -222,6 +230,14 @@ ul {
         margin-right: 30px;
         flex-direction: column ;
       } 
+
+      .IndexInfo H1 {
+        font-size: 30px;
+      }
+
+      .IndexInfo H2 {
+        font-size: 18px;
+      }
   }
   
   .IndexIMG img {
