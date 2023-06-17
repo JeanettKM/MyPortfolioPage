@@ -4,6 +4,11 @@
     box-sizing: border-box;
   }
 
+  
+  a {
+    text-decoration: none;
+  }
+
   button {
     border: none;
     border-radius: 3px;
@@ -50,12 +55,14 @@ ul {
     margin-left: 20px;
     list-style-type: none;
   }
+
+
   
   .navTabs a {
     text-decoration: none;
     color: white;
     font-weight: 100;
-    font-size: 17px;
+    font-size: 16px;
   }
 
   main {
@@ -179,12 +186,10 @@ ul {
     background-color: rgb(105, 65, 74);
     color: white;
     margin-top: 40px;
+  
   }
 
-  .footer p {
-    text-decoration: none;
-  }
-  
+
   /* Media queries */
   @media screen and (max-width: 768px) {
     .IndexContainer {
