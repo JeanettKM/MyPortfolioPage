@@ -414,6 +414,21 @@ ul {
    
   /* Media queries */
 
+  @media screen and (max-width: 260px) {
+    .repository {
+      max-width: 150px;
+    }
+
+    .repository h2 {
+      font-size: 15px;
+    }
+
+    .projectsInfo p {
+      font-size: 10px;
+      max-width: 120px;
+    }
+
+  }
   @media screen and (max-width: 768px) {
     .IndexContainer {
       flex-direction: column;
