@@ -117,13 +117,18 @@ ul {
   
   .socialsContainer {
     padding: 30px;
-    transform: matrix(0, 1, 1, 0, 0, 0,);
   }
   
   .socials {
     display: inline-block;
     padding: 15px;
     font-size: 32px;
+  }
+
+
+  .socials:hover {
+    color:rgb(80, 197, 158);
+
   }
 
   .toolslist li {
@@ -228,12 +233,13 @@ ul {
   .projectsInfo li:hover {
     text-decoration: underline;
     font-size: 22px;
-  }
-  
-  .projectsInfo a:hover {
     text-decoration: underline;
     font-weight: 500;
     color: rgb(80, 197, 158);
+  }
+  
+ p a:hover {
+      color: rgb(80, 197, 158);
   }
   
   .navTabs li:hover {
@@ -414,21 +420,7 @@ ul {
    
   /* Media queries */
 
-  @media screen and (max-width: 260px) {
-    .repository {
-      max-width: 150px;
-    }
-
-    .repository h2 {
-      font-size: 15px;
-    }
-
-    .projectsInfo p {
-      font-size: 10px;
-      max-width: 120px;
-    }
-
-  }
+  
   @media screen and (max-width: 768px) {
     .IndexContainer {
       flex-direction: column;
@@ -470,7 +462,7 @@ ul {
     }
 
     .socialsContainer {
-      padding: 10px;
+      padding: 12px;
     }
 
     .socials {
@@ -494,4 +486,53 @@ ul {
       .IndexInfo H2 {
         font-size: 18px;
       }
+  }
+
+  @media screen and (max-width: 280px) {
+    
+    
+    .IndexInfo H1 {
+      font-size: 17px;
+    }
+
+    .IndexInfo H2 {
+      font-size: 14px;
+    }
+
+    main {
+      padding: 0px;
+      margin: 0px;
+    }
+
+
+    .repository {
+      max-width: 150px;
+      padding: 5px;
+      margin: 5px;
+      min-width:auto;
+    }
+
+    .repository h2 {
+      font-size: 15px;
+    }
+
+    .projectsInfo p {
+      font-size: 15px;
+      max-width: 120px;
+      padding: 0px;
+    }
+
+    .toolslist li {
+      font-size: 15px;
+    }
+
+    .projectsInfo li:hover {
+      font-size: 16px;
+    }
+
+    .repositories {
+      min-width
+      padding: none;
+    }
+
   }
