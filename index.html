@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Varela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
+          
 
 </head>
 <body>
@@ -28,26 +31,21 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="top">
         <section class="IndexContainer">
-            <div class="IndexIMG">
-                <img src="/Pictures/MyFace.jpg" alt="A picture of me (Jeanett Melsom)">
-            </div>
             <div class="IndexInfo">
+                <div class="IndexIMG">
+                    <img src="/Pictures/MyFace.jpg" alt="A picture of me (Jeanett Melsom)">
+                </div>
                 <h1>Hello, I am Jeanett Melsom, a frontend Development student.</h1>
                 <h2>I'm a design passionate developer located in Trondheim, Norway.</h2>
                 <div class="buttonContainer">
                     <div class="btn"><button class="socialbutton"><a href="#repositories">My Projects</a></button></div>
                 </div>
-                <div class="socialsContainer">
-                    <a  class="socials" href="https://www.linkedin.com/in/jeanett-melsom-927ab4123/"><span class="iconify" data-icon="entypo-social:linkedin-with-circle"></span></a>
-                    <a class="socials" href="https://www.facebook.com/jeanettmelsom"><span class="iconify" data-icon="entypo-social:facebook-with-circle"></span></a>
-                    <a class="socials" href="https://www.instagram.com/jeanett_km/"><span class="iconify" data-icon="entypo-social:instagram-with-circle"></span></a>
-                </div>
             </div>
         </section>
         <section class="projectsInfo">
-                    <div id="contact" class="portfolioIMG">
+                    <div class="portfolioIMG">
                         <img src="/Pictures/Screenshot 2023-06-11 at 20-40-09 Jeanett. M (@jeanett_km) on Instagram.png" alt="A picture of me and my cat(Jeanett Melsom)">
                     </div>
                     <p>
@@ -59,7 +57,7 @@
                     </div>
                     <p>                        I currently know and use the following programs, tools and languages:</p>
                     <br>
-                    <ul>
+                    <ul id="contact" class="toolslist">
                         <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML5</a></li>
                         <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS3</a></li>
                         <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
@@ -69,12 +67,15 @@
                     </ul>
                     </div>
                     <div>
-                        you can contact me at <a href="https://www.linkedin.com/in/jeanett-melsom-927ab4123/"> LinkedIn <span class="iconify" data-icon="entypo-social:linkedin-with-circle"></span></a> or <a href="https://github.com/JeanettKM">Github <iconify-icon icon="bytesize:github"></iconify-icon></a> if you have any questions or would like to collaborate!
+                        <p>you can contact me at <a href="https://www.linkedin.com/in/jeanett-melsom-927ab4123/"> LinkedIn <span class="iconify" data-icon="entypo-social:linkedin-with-circle"></span></a> or <a href="https://github.com/JeanettKM">Github <iconify-icon icon="bytesize:github"></iconify-icon></a> if you have any questions or would like to collaborate!</p>
                     </div>
                     <div class="socialsContainer">
                         <a  class="socials" href="https://www.linkedin.com/in/jeanett-melsom-927ab4123/"><span class="iconify" data-icon="entypo-social:linkedin-with-circle"></span></a>
                         <a class="socials" href="https://www.facebook.com/jeanettmelsom"><span class="iconify" data-icon="entypo-social:facebook-with-circle"></span></a>
                         <a class="socials" href="https://www.instagram.com/jeanett_km/"><span class="iconify" data-icon="entypo-social:instagram-with-circle"></span></a>
+
+                        <a class="socials" href="https://github.com/JeanettKM/"><iconify-icon icon="bytesize:github"></iconify-icon></a>
+
                     </div>
             </div>
         </section>
@@ -120,9 +121,12 @@
                 <a href="https://dreamy-granita-7442ed.netlify.app/">The Live website</a>
              </div>
             <div class="github">
-               <a href="https://github.com/JeanettKM/CA_SquareEyes_JeanettMelsom">The Github Repository <iconify-icon icon="bytesize:github"></iconify-icon></a>
+               <a href="https://github.com/JeanettKM/SquareEyes">The Github Repository <iconify-icon icon="bytesize:github"></iconify-icon></a>
             </div>
           </div>
+        </section>
+        <section class="totopbtnContainer">
+          <button id="totopBtn"><a href="#top">Back to top</button>
         </section>
     </main>
     <footer class="footer">
