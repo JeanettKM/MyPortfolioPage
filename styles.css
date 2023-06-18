@@ -20,11 +20,11 @@ ul {
 }
 
   body {
-    background-color: rgb(143, 91, 103);
     font-family: 'Quicksand', sans-serif, Arial, Helvetica, sans-serif;
     min-width: 200px;
     background: url("layered-waves-haikei\(60\).svg");
     background-size: cover;
+    background-color: black;
   }
 
   header {
@@ -110,7 +110,7 @@ ul {
 
 
   .logo:hover {
-    color: rgb(80, 197, 158);
+    color: #2fc0a8;
     font-weight: 400;
     transition: color 0.1s ease;
   }
@@ -127,7 +127,7 @@ ul {
 
 
   .socials:hover {
-    color:rgb(80, 197, 158);
+    color:#2fc0a8;
 
   }
 
@@ -235,17 +235,17 @@ ul {
     font-size: 22px;
     text-decoration: underline;
     font-weight: 500;
-    color: rgb(80, 197, 158);
+    color: #2fc0a8;
   }
   
  p a:hover {
-      color: rgb(80, 197, 158);
+      color: #2fc0a8;
   }
   
   .navTabs li:hover {
     text-decoration: underline;
     font-weight: 300;
-    color: rgb(80, 197, 158);
+    color: #2fc0a8;
     transition: color 0.1s ease;
   }
 
@@ -307,7 +307,7 @@ ul {
   
   .github a:hover {
     text-decoration: underline;
-    color: rgb(80, 197, 158);
+    color: #239784;
     transition: color 0.1s ease;
   }
   
@@ -359,8 +359,8 @@ ul {
     overflow: hidden;
     font-size: 15px;
     color: white;
-    background-color: #39bda7;
-    border: solid 1px #39bda7;
+    background-color: #1a9d87;
+    border: solid 1px #1a9d87;
     z-index: 1;
     font-weight: 100;
    }
@@ -378,7 +378,7 @@ ul {
     top: 100%;
     width: 140%;
     height: 180%;
-    background-color: #39bda7;
+    background-color: #239784;
     border-radius: 50%;
     display: block;
     transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
@@ -401,8 +401,8 @@ ul {
    }
    
    .button:hover {
-    color: #39bda7;
-    border: 1px solid #39bda7;
+    color: #239784;
+    border: 1px solid #239784;
    }
    
    .button:hover:before {
@@ -533,3 +533,5 @@ ul {
       padding: none;
 
     }
+
+  }
